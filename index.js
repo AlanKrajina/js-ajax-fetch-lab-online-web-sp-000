@@ -25,7 +25,7 @@ function forkRepo() {
 
 function showResults(json) {
     $("#results").append(`<a href=${json.html_url}>${json.html_url}</a>`)
-}
+
 
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
