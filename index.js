@@ -36,7 +36,7 @@ function showResults(json) {
         title: document.getElementById('title').value,  // when <a> gets clicked this info gets saved to postData
         body: document.getElementById('body').value     // when <a> gets clicked this info gets saved to postData
       };
-    
+
       fetch(url, {
         method: 'POST',
         body: JSON.stringify(postData),   // postData passed as a JSON string using JSON.stringify in the request body
@@ -47,8 +47,8 @@ function showResults(json) {
         .then(res => res.json())
         .then(json => getIssues());
     }
-    
-    
+
+
     //function to get data
     function getIssues() {
       //once an issue is submitted, fetch all open issues to see the issues you are creating
