@@ -16,7 +16,7 @@ function forkRepo() {
 
   fetch(url,{
     headers: {
-    Authorization: `${getToken()}`
+    Authorization: {getToken()
     }
   })
     .then(response => response.json())
